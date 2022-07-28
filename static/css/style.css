@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #1A1A1D;  /* fallback for old browsers */
+    font-family: 'Alegreya Sans SC';
+    
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    font-family: 'Nova Flat'
+}
+
+.main_header{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+    align-items: center;
+}
+.header_text{
+    display: inline-block;
+    position: relative;
+    font-family: 'Aclonica';
+    align-content: center;
+    padding-left: 20px;
+    
+}
+
+.main_header img{
+    width: 100px;
+    height: 100px;
+}
+
+.header_text:after{
+    content: '';
+    margin-left: 120px;
+    width:200px;
+    height: 2px;
+    position: absolute;
+    background-color: #ff652f;
+    transition:  all 0.3s ease-in-out;
+}
+
+.header_text:hover::before{
+    margin-left: 120px;
+    width: 200px;
+}
+.header_text:hover::after{
+    margin-left: 0;
+    width: 450px;
+}
+
+.form_container{
+    display: flex;
+    justify-content: center;
+}
+
+.form_container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    gap: 13pt;
+    box-sizing: border-box;
+    height: 560px;
+    padding: 20px;
+    width: 420px;
+}
+.input-container {
+  background-color: #272727;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 18px;
+  height: 50px;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+  }
+
+
+
+form label{
+    font-size: 24px;
+    color: white;
+}
+
+.submit{
+    background-color: #ff652f;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 65px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 45%;
+}
+
+
+/* for mobile devices */
+
+@media only screen and (max-width: 896px) {
+    .header_text:after{
+        margin-left: 0;
+    }
+    .main_header{
+        margin-left: 10px;
+    }
+    .header_text:hover::after{
+        margin-left: 0;
+        width: 200px;
+    }
+}

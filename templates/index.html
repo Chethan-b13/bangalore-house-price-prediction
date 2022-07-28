@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block home %}
+
+    <div class="form_container">
+        <form action="estimated-price/" method="post">
+            {% csrf_token %}
+            <label for="area_ft">Area in Sqft</label>
+            <input type="text" id="area_ft" placeholder="0 Sqft" name="area_ft" class="input-container">
+
+            <label class="bhk">Bhk</label>
+            <input type="number" id="bhk" placeholder="0" name="bhk" min="1" max="12" class="input-container">
+            
+
+            <label class="bathroom">Bathroom</label>
+            <input type="number" id="bathroom" placeholder="0" name="bathroom" min="1" max="12" class="input-container">
+
+            <label for="area">Area</label>
+                <select id="area" name="area" class="input-container">
+                <option value="Indira Nagar">Indira Nagar</option>
+                <option value="1st Phase JP nagar">1st Phase JP nagar </option>
+                <option value="4th block Jayanagar">4th block Jayanagar</option>
+                </select>
+
+            {% block submit %}
+                 <input type="submit" value="Estimate" class="submit">
+            {% endblock  %}
+        </form>
+    </div>
+
+{% endblock %}
+    
