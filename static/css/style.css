@@ -55,6 +55,25 @@ h1{
     width: 450px;
 }
 
+
+.form_result{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_result button{
+    width: 20%;
+    font-size: 24px;
+}
+
+.form_result p{
+    padding: 10px;
+    font-size: 18px;
+}
+
+
 .form_container{
     display: flex;
     justify-content: center;
@@ -93,7 +112,7 @@ form label{
 }
 
 .submit{
-    background-color: #ff652f;
+  background-color: #ff652f;
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
@@ -108,6 +127,9 @@ form label{
 }
 
 
+
+
+
 /* for mobile devices */
 
 @media only screen and (max-width: 896px) {
@@ -120,5 +142,8 @@ form label{
     .header_text:hover::after{
         margin-left: 0;
         width: 200px;
+    }
+    .form_result button{
+        width: 30%;
     }
 }

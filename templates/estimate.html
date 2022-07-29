@@ -1,9 +1,16 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 
-{% block submit %}
-    <button class="submit">1500Cr</button>
-    <p>Estimated Price</p>
+{% block title %}
+    <title>Estimated Price</title>
+{% endblock  %}
+    
+
+{% block home %}
+    <div class="form_result">
+        <button class="submit" disabled>&#x20b9; {{price}} Lakhs</button>
+        <p>Estimated Price</p>
+    </div>
 {% endblock  %}
     

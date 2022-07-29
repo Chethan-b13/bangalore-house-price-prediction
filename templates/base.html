@@ -9,7 +9,12 @@
     <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-    <title>Bangalore House Price</title>
+    <link rel = "icon" href ="{% static 'images/mach2logo.png' %}" sizes="16x16 32x32" type = "image/x-icon">
+    
+    {% block title %}
+        <title>Bangalore House Price</title>
+    {% endblock  %}
+        
 </head>
 <body>
 
@@ -17,7 +22,7 @@
         <img src="{% static 'images/mach2logo.png'%}" alt="logo">
         <div class="header_text">
             
-            <a href="/"><h1>Bangalore House Price Predictor</h1></a>
+            <a href="{% url 'home' %}"><h1>Bangalore House Price Predictor</h1></a>
             <div class="line"></div>
         </div>
     </section>

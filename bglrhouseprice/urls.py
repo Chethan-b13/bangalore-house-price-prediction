@@ -21,5 +21,5 @@ from .views import Home,Estimate
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',Home,name='home'),
-    path('estimated-price/',Estimate,name="estimate")
+    path('estimated-price/',Estimate,name="result")
 ]
