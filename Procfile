@@ -1,3 +1,3 @@
 web: python manage.py runserver 0.0.0.0:$PORT
-web: gunicorn bglrhouseprice.wsg
+web: gunicorn bglrhouseprice.wsgi
 release: python manage.py migrate
