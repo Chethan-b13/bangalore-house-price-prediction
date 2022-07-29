@@ -135,7 +135,7 @@ form label{
 
 /* for mobile devices */
 
-@media only screen and (max-width: 896px) {
+@media only screen and (max-width: 480px) {
     .header_text:after{
         margin-left: 0;
     }
@@ -149,4 +149,18 @@ form label{
     .form_result button{
         width: 30%;
     }
+
+
+    .input-container{
+        width: 75%;
+    }
+
+    .submit{
+        width: 30%;
+    }
+
+    .form_container form{
+        gap: 10pt;
+    }
+
 }
