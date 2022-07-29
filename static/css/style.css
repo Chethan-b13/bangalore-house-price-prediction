@@ -155,10 +155,6 @@ form label{
         width: 75%;
     }
 
-    .submit{
-        width: 30%;
-    }
-
     .form_container form{
         gap: 10pt;
     }
