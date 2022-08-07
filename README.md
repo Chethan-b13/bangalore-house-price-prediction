@@ -30,8 +30,9 @@ The web app has been build using basic HTML, CSS, Django and deployed using hero
 Link: https://bglr-house-price.herokuapp.com/
 ## Demo
 
-<img src="static/images/Screenshot from 2022-08-07 12-24-28.png"/>
 <img src="static/images/Screenshot from 2022-08-07 12-24-13.png"/>
+<img src="static/images/Screenshot from 2022-08-07 12-24-28.png"/>
+
 
 ## Future Scope
 
